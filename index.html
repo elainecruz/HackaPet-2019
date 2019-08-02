@@ -4,56 +4,58 @@
         <title>Hackathon</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">INÍCIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="feed.html">FEED <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="perfil.html">PERFIL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">EMPRESAS</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+            
     </head>
     
     <body>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">INÍCIO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="feed.html">FEED <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="perfil.html">PERFIL</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">EMPRESAS</a>
-              </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            
           </div>
-        </nav>
-    </header>
-
-    <div class= "inicio">
-        <div class= "inicio-left">
-
-        </div>
-        <div class="inicio-right">
-            <div class="description">
-                <h1 class="welcome">Bem Vindo! </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales leo diam, venenatis semper neque auctor quis. Pellentesque eget libero quis eros egestas tempus id sit amet turpis.
-                  Praesent tempor, nulla vel tristique dapibus, velit velit rhoncus nulla, in venenatis enim neque eget est. Suspendisse rutrum, justo quis sagittis pulvinar, enim erat lacinia nisi, eu 
-                  elementum libero justo sit amet enim. Ut nec maximus tellus. Maecenas blandit erat sagittis, egestas nunc elementum, tempor orci. 
-                 </p>
-
-                 <div class="acesss">
-                      <span>Entrar</span>
-                      <span>Cadastrar-se</span>
-                  </div>
-                </div>
-
-         
+      
+          <!-- Login Form -->
+          <form>
+            <input type="text" id="E-mail" class="fadeIn second" name="login" placeholder="Usuário">
+            <input type="password" id="Senha" class="fadeIn third" name="login" placeholder="Senha">
+            <input type="submit" class="fadeIn fourth" value="Conectar-se">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="cadastro.html">Cadastre-se</a>
+            <a> |</a>
+            <a class="underlineHover" href="newpassword.html">Esqueceu sua Senha?</a>
+          </div>
+      
         </div>
       </div>
 
