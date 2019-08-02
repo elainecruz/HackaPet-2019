@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hackathon</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Nome da empresa</h1>
+        
+        <p class="lead">Um pouco sobre a empresa</p>
+        <hr class="my-4">
+        <p>a contribuição dela para acessibilidade em poucas palavras</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button" onclick="showText()">Learn more</a>
+
+        </p>
+        <div>
+            <p id="sobre">
+               continuação da contrihuição oq ela acha e tal....
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function showText() {
+        let sobreText = document.getElementById("sobre")
+        console.log("rodou")
+        if (sobreText.style.display == "inline") {
+            sobreText.style.display = "none";
+            console.log("nonificou")
+        } else {
+            sobreText.style.display = "inline";
+            console.log("inlinificou")
+        }
+    }
+</script>
